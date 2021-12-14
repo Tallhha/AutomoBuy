@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dealer_Dashboard"
+    android:background="#f8b451"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dealer's Dashboard"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_margin="10dp"
+
+        />
+
+    <View
+        android:id="@+id/view_section"
+        android:background="#f57542"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/view_customers_button"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundcorners"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="View Customers"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_supervisor_account_24"
+
+
+        />
+    <TextView
+        android:id="@+id/view_reg_form_button"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundcorners"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:layout_below="@id/view_customers_button"
+        android:text="View Test Drive Forms"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_insert_drive_file_24"
+
+        />
+
+    <TextView
+        android:id="@+id/manage_bookings_button"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundcorners"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:layout_below="@id/view_reg_form_button"
+        android:text="Manage Bookings"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_bookmark_24"
+
+        />
+
+</RelativeLayout>
