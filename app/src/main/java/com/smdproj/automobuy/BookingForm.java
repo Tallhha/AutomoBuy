@@ -1,9 +1,9 @@
 package com.smdproj.automobuy;
 
 public class BookingForm {
-    String Vehicle, FirstName, LastName, Email, PhoneNo, Cnic, BuyingOption;
+    String id, Vehicle, FirstName, LastName, Email, PhoneNo, Cnic, BuyingOption;
 
-    public BookingForm(String vehicle, String firstName, String lastName, String email, String phoneNo, String cnic, String buyingOption) {
+    public BookingForm(String id, String vehicle, String firstName, String lastName, String email, String phoneNo, String cnic, String buyingOption) {
         Vehicle = vehicle;
         FirstName = firstName;
         LastName = lastName;
@@ -11,6 +11,15 @@ public class BookingForm {
         PhoneNo = phoneNo;
         Cnic = cnic;
         BuyingOption = buyingOption;
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getVehicle() {

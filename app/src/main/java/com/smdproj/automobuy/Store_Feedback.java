@@ -2,12 +2,21 @@ package com.smdproj.automobuy;
 
 public class Store_Feedback {
 
-    String fname, lname, description;
+    String id, fname, lname, description;
 
-    public Store_Feedback(String fname, String lname, String description) {
+    public Store_Feedback(String id, String fname, String lname, String description) {
         this.fname = fname;
         this.lname = lname;
         this.description = description;
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getFname() {

@@ -2,9 +2,9 @@ package com.smdproj.automobuy;
 
 public class Sale {
     //sales
-    String dlr_email, cust_email, dlr_name, cust_name, vehicle, model, cost, buying_option;
+    String id, dlr_email, cust_email, dlr_name, cust_name, vehicle, model, cost, buying_option;
 
-    public Sale(String dlr_email, String cust_email, String dlr_name, String cust_name, String vehicle, String model, String cost, String buying_option) {
+    public Sale(String id, String dlr_email, String cust_email, String dlr_name, String cust_name, String vehicle, String model, String cost, String buying_option) {
         this.dlr_email = dlr_email;
         this.cust_email = cust_email;
         this.dlr_name = dlr_name;
@@ -13,6 +13,15 @@ public class Sale {
         this.model = model;
         this.cost = cost;
         this.buying_option = buying_option;
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getDlr_email() {

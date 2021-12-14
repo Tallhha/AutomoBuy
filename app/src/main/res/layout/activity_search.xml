@@ -68,10 +68,10 @@
             />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_below="@id/search_text"
+            android:id="@+id/search_recycle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
+            android:layout_below="@id/search_text" />
         <ImageView
             android:layout_width="15dp"
             android:layout_height="15dp"

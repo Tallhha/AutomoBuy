@@ -2,7 +2,7 @@ package com.smdproj.automobuy;
 
 public class Employee {
 
-    String FirstName, LastName, Email, PhoneNo, CNIC, Address, type, salary,sales;
+    String id, FirstName, LastName, Email, PhoneNo, CNIC, Address, type, salary,sales;
 
     public Employee(String firstName, String lastName, String email, String phoneNo, String CNIC, String address, String type, String salary, String sales) {
         FirstName = firstName;
@@ -14,6 +14,15 @@ public class Employee {
         this.type = type;
         this.salary = salary;
         this.sales = sales;
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getFirstName() {

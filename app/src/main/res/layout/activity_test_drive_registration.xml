@@ -65,8 +65,7 @@
             android:gravity="center|left"
             android:hint="First Name"
             android:paddingLeft="10dp"
-            android:textSize="15dp"
-            />
+            android:textSize="15dp" />
         <EditText
             android:id="@+id/lname"
             android:layout_width="180dp"
@@ -125,7 +124,7 @@
             />
 
         <TextView
-            android:id="@+id/login"
+            android:id="@+id/submit"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
@@ -153,7 +152,7 @@
             android:layout_marginRight="10dp"
             android:background="@drawable/roundcorners"
             android:gravity="center|left"
-            android:hint="Date (dd/mm/yyyy)"
+            android:hint="Date (yyyy/mm/dd)"
             android:paddingLeft="10dp"
             android:textSize="15dp" />
         <EditText

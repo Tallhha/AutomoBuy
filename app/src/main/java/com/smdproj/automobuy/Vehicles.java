@@ -4,10 +4,11 @@ import android.net.Uri;
 
 public class Vehicles {
 
-    String Name, Company, Type, Model, Color, Cost, Total;
-    Uri Img;
+    String id, Name, Company, Type, Model, Color, Cost, Total;
+    //Uri Img;
+    String Img;
 
-    public Vehicles(String name, String company, String type, String model, String color, String cost, String total, Uri img) {
+    public Vehicles(String id, String name, String company, String type, String model, String color, String cost, String total, String img) {
         Name = name;
         Company = company;
         Type = type;
@@ -16,13 +17,22 @@ public class Vehicles {
         Cost = cost;
         Total = total;
         Img = img;
+        this.id = id;
     }
 
-    public Uri getImg() {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getImg() {
         return Img;
     }
 
-    public void setImg(Uri img) {
+    public void setImg(String img) {
         Img = img;
     }
 

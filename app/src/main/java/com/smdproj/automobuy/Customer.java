@@ -2,15 +2,24 @@ package com.smdproj.automobuy;
 
 public class Customer {
 
-    String FirstName, LastName, Email, PhoneNo, CNIC, Address;
+    String id, FirstName, LastName, Email, PhoneNo, CNIC, Address;
 
-    public Customer(String firstName, String lastName, String email, String phoneNo, String CNIC, String address) {
+    public Customer(String id, String firstName, String lastName, String email, String phoneNo, String CNIC, String address) {
         FirstName = firstName;
         LastName = lastName;
         Email = email;
         PhoneNo = phoneNo;
         this.CNIC = CNIC;
         Address = address;
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getFirstName() {
