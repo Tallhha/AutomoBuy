@@ -1,7 +1,7 @@
 package com.smdproj.automobuy;
 
 public class Sale {
-
+    //sales
     String dlr_email, cust_email, dlr_name, cust_name, vehicle, model, cost, buying_option;
 
     public Sale(String dlr_email, String cust_email, String dlr_name, String cust_name, String vehicle, String model, String cost, String buying_option) {
