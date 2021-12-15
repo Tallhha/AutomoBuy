@@ -5,10 +5,13 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -30,7 +33,9 @@ public class Vehicle_Adapter extends RecyclerView.Adapter<Vehicle_Adapter.ImageV
 
     @Override
     public void onBindViewHolder(ImageViewHolder holder, int position) {
-
+        Glide.with(mContext)
+                .load(mUploads.get(position).getImg())
+                .into(holder.photo);
     }
 
     @Override
@@ -39,10 +44,10 @@ public class Vehicle_Adapter extends RecyclerView.Adapter<Vehicle_Adapter.ImageV
     }
 
     public class ImageViewHolder extends RecyclerView.ViewHolder {
-
+        ImageView photo;
         public ImageViewHolder(View itemView) {
             super(itemView);
-
+            photo = itemView.findViewById(R.id.photo);
         }
     }
 }

@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class Home extends AppCompatActivity {
 
-    ImageView registration, search;
+    ImageView registration, search, menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,16 @@ public class Home extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        menu = findViewById(R.id.menu);
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, Login.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

@@ -41,7 +41,7 @@ public class TestDriveRegistration extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                postData(new TestDriveForm("",cars.getText().toString(), fname.getText().toString(), lname.getText().toString(), email.getText().toString(), phone.getText().toString(), cnic.getText().toString(), date.getText().toString(), time.getText().toString(), outlet.getText().toString()));
+                postData(new TestDriveForm("",cars.getText().toString(), fname.getText().toString(), lname.getText().toString(), email.getText().toString(), phone.getText().toString(), cnic.getText().toString(), date.getText().toString(), outlet.getText().toString()));
             }
         });
 
@@ -49,7 +49,7 @@ public class TestDriveRegistration extends AppCompatActivity {
 
     public void postData(TestDriveForm form) {
 
-        String urll = "http://192.168.1.7/automobuy/insert_testdrive.php";
+        String urll = "http://192.168.56.1/automobuy/insert_testdrive.php";
         StringRequest request = new StringRequest(Request.Method.POST, urll, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

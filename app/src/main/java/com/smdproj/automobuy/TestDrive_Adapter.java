@@ -24,12 +24,22 @@ public class TestDrive_Adapter extends RecyclerView.Adapter<TestDrive_Adapter.Im
 
     @Override
     public ImageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(mContext).inflate(R.layout.temp_item, parent, false);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.d_d_reg_form, parent, false);
         return new ImageViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(ImageViewHolder holder, int position) {
+
+        holder.fname.setText(mUploads.get(position).getFirstName());
+        holder.lname.setText(mUploads.get(position).getLastName());
+        holder.email.setText(mUploads.get(position).getEmail());
+        holder.phone_no.setText(mUploads.get(position).getPhoneNo());
+        holder.cnic.setText(mUploads.get(position).getCnic());
+        holder.date.setText(mUploads.get(position).getDate());
+        holder.id.setText(mUploads.get(position).getId());
+        holder.vehicle.setText(mUploads.get(position).getVehicle());
+        holder.outlet.setText(mUploads.get(position).getOutlet());
 
     }
 
@@ -40,8 +50,18 @@ public class TestDrive_Adapter extends RecyclerView.Adapter<TestDrive_Adapter.Im
 
     public class ImageViewHolder extends RecyclerView.ViewHolder {
 
+        TextView fname, lname, email, cnic, phone_no, vehicle, outlet, date, id;
         public ImageViewHolder(View itemView) {
             super(itemView);
+            fname = itemView.findViewById(R.id.fname);
+            lname = itemView.findViewById(R.id.lname);
+            cnic = itemView.findViewById(R.id.cnic);
+            phone_no = itemView.findViewById(R.id.phone_no);
+            email = itemView.findViewById(R.id.email);
+            id = itemView.findViewById(R.id.testdrive_id);
+            vehicle = itemView.findViewById(R.id.car_name);
+            outlet = itemView.findViewById(R.id.car_outlet);
+            date = itemView.findViewById(R.id.car_date);
 
         }
     }

@@ -2,9 +2,9 @@ package com.smdproj.automobuy;
 
 public class TestDriveForm {
 
-    String id, Vehicle, FirstName, LastName, Email, PhoneNo, Cnic, date, time, Outlet;
+    String id, Vehicle, FirstName, LastName, Email, PhoneNo, Cnic, date, Outlet;
 
-    public TestDriveForm(String id, String vehicle, String firstName, String lastName, String email, String phoneNo, String cnic, String date, String time, String outlet) {
+    public TestDriveForm(String id, String vehicle, String firstName, String lastName, String email, String phoneNo, String cnic, String date, String outlet) {
         Vehicle = vehicle;
         FirstName = firstName;
         LastName = lastName;
@@ -12,7 +12,6 @@ public class TestDriveForm {
         PhoneNo = phoneNo;
         Cnic = cnic;
         this.date = date;
-        this.time = time;
         Outlet = outlet;
         this.id = id;
     }
@@ -79,14 +78,6 @@ public class TestDriveForm {
 
     public void setDate(String date) {
         this.date = date;
-    }
-
-    public String getTime() {
-        return time;
-    }
-
-    public void setTime(String time) {
-        this.time = time;
     }
 
     public String getOutlet() {

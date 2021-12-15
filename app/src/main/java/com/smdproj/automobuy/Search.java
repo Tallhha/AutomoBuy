@@ -43,14 +43,6 @@ public class Search extends AppCompatActivity {
         ls = new ArrayList<>();
         RecyclerView.LayoutManager lm = new LinearLayoutManager(Search.this);
         rv.setLayoutManager(lm);
-
-        getData();
-
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
         getData();
     }
 
@@ -92,7 +84,7 @@ public class Search extends AppCompatActivity {
                                 //creating adapter object and setting it to recyclerview
                                 adapter = new Vehicle_Adapter(Search.this, ls);
                                 rv.setAdapter(adapter);
-                                //Toast.makeText(Search.this, "DONE", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Search.this, ls.get(0).getImg(), Toast.LENGTH_SHORT).show();
 
                             }
                             else{
