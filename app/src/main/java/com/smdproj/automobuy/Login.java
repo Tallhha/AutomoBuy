@@ -66,6 +66,9 @@ public class Login extends AppCompatActivity {
                                         object.getInt("is_dlr")
                                 ));
 
+                                MyDBHelper db = new MyDBHelper(Login.this);
+                                db.insertData(ls.getEmail(), ls.getPw(), String.valueOf(ls.getIsManager()), String.valueOf(ls.getIsDealer()));
+
                                 if(ls.getIsDealer() == 1){
                                     Intent intent = new Intent(Login.this, Dealer_Dashboard.class);
                                     startActivity(intent);

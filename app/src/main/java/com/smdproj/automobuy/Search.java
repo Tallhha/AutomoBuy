@@ -84,8 +84,6 @@ public class Search extends AppCompatActivity {
                                 //creating adapter object and setting it to recyclerview
                                 adapter = new Vehicle_Adapter(Search.this, ls);
                                 rv.setAdapter(adapter);
-                                Toast.makeText(Search.this, ls.get(0).getImg(), Toast.LENGTH_SHORT).show();
-
                             }
                             else{
                                 Toast.makeText(Search.this, "Failed to load data", Toast.LENGTH_LONG).show();

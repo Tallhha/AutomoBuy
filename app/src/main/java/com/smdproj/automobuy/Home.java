@@ -38,9 +38,22 @@ public class Home extends AppCompatActivity {
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, Login.class);
-                startActivity(intent);
+                MyDBHelper db = new MyDBHelper(Home.this);
+                String value = db.checkUser();
+                if(value.equals("mgr")) {
+                    Intent intent = new Intent(Home.this, Dealer_Dashboard.class);
+                    startActivity(intent);
+                }
+                else if(value.equals("dlr")){
+                    Intent intent = new Intent(Home.this, Dealer_Dashboard.class);
+                    startActivity(intent);
+                }
+                else{
+                    Intent intent = new Intent(Home.this, Login.class);
+                    startActivity(intent);
+                }
             }
+
         });
 
 
