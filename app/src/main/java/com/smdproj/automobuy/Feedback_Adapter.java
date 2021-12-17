@@ -24,13 +24,15 @@ public class Feedback_Adapter extends RecyclerView.Adapter<Feedback_Adapter.Imag
 
     @Override
     public ImageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(mContext).inflate(R.layout.temp_item, parent, false);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.m_d_feedback_item, parent, false);
         return new ImageViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(ImageViewHolder holder, int position) {
-
+        holder.fname.setText(mUploads.get(position).getFname());
+        holder.lname.setText(mUploads.get(position).getLname());
+        holder.feedback.setText(mUploads.get(position).getDescription());
     }
 
     @Override
@@ -39,10 +41,12 @@ public class Feedback_Adapter extends RecyclerView.Adapter<Feedback_Adapter.Imag
     }
 
     public class ImageViewHolder extends RecyclerView.ViewHolder {
-
+        TextView fname, lname, feedback;
         public ImageViewHolder(View itemView) {
             super(itemView);
-
+            fname = itemView.findViewById(R.id.fname);
+            lname = itemView.findViewById(R.id.lname);
+            feedback = itemView.findViewById(R.id.feedback);
         }
     }
 }

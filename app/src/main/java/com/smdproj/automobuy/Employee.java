@@ -4,7 +4,7 @@ public class Employee {
 
     String id, FirstName, LastName, Email, PhoneNo, CNIC, Address, type, salary,sales;
 
-    public Employee(String firstName, String lastName, String email, String phoneNo, String CNIC, String address, String type, String salary, String sales) {
+    public Employee(String id, String firstName, String lastName, String email, String phoneNo, String CNIC, String address, String type, String salary, String sales) {
         FirstName = firstName;
         LastName = lastName;
         Email = email;

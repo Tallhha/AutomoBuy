@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +15,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AutomoBuy"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".M_D_View_Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".M_D_Add_Vehicle"
+            android:exported="false" />
+        <activity
+            android:name=".M_D_Add_Dealer"
+            android:exported="false" />
+        <activity
+            android:name=".Manager_Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".M_D_View_Sales"
+            android:exported="false" />
+        <activity
+            android:name=".PurchaseCar"
+            android:exported="false" />
         <activity
             android:name=".D_D_View_Forms"
             android:exported="false" />

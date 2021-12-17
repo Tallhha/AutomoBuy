@@ -24,13 +24,22 @@ public class Employee_Adapter extends RecyclerView.Adapter<Employee_Adapter.Imag
 
     @Override
     public ImageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(mContext).inflate(R.layout.temp_item, parent, false);
+        View v = LayoutInflater.from(mContext).inflate(R.layout.d_d_customer, parent, false);
         return new ImageViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(ImageViewHolder holder, int position) {
 
+
+        holder.fname.setText(mUploads.get(position).getFirstName());
+        holder.lname.setText(mUploads.get(position).getLastName());
+        holder.email.setText(mUploads.get(position).getEmail());
+        holder.phone_no.setText(mUploads.get(position).getPhoneNo());
+        holder.id.setText(mUploads.get(position).getId());
+        holder.type.setText((mUploads.get(position).getType()));
+        holder.sales.setText((mUploads.get(position).getSales()));
+        holder.salary.setText((mUploads.get(position).getSalary()));
     }
 
     @Override
@@ -40,10 +49,17 @@ public class Employee_Adapter extends RecyclerView.Adapter<Employee_Adapter.Imag
 
     public class ImageViewHolder extends RecyclerView.ViewHolder {
 
+        TextView fname, lname, email, phone_no,type,salary,sales,id;
         public ImageViewHolder(View itemView) {
             super(itemView);
-
+            fname = itemView.findViewById(R.id.fname);
+            lname = itemView.findViewById(R.id.lname);
+            phone_no = itemView.findViewById(R.id.phone_no);
+            email = itemView.findViewById(R.id.email);
+            id = itemView.findViewById(R.id.dealer_id);
+            type = itemView.findViewById((R.id.type));
+            salary = itemView.findViewById(R.id.salary);
+            sales = itemView.findViewById(R.id.n_sales);
         }
     }
 }
-

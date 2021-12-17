@@ -9,6 +9,7 @@
     android:background="#f8b451"
     >
 
+
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -31,9 +32,70 @@
         android:layout_below="@+id/title"
         android:layout_margin="10dp"
         />
+
+    <EditText
+        android:id="@+id/id_to_delete"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/view_section"
+        android:layout_alignTop="@id/view_section"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="number"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundcorners"
+        android:backgroundTint="@color/white"
+        android:gravity="center|left"
+        android:hint="Enter Sale ID"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/approve_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/view_section"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/reject_button"
+        android:background="@drawable/roundcorners"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Approve"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#4EFF0D"
+        />
+
+    <TextView
+        android:id="@+id/reject_button"
+        android:layout_alignEnd="@id/view_section"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/view_section"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundcorners"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Reject"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#FF5353"
+        />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/Manage_list"
-        android:layout_alignTop="@id/view_section"
+        android:layout_below="@id/id_to_delete"
         android:layout_alignLeft="@id/view_section"
         android:layout_alignBottom="@id/view_section"
         android:layout_alignRight="@id/view_section"

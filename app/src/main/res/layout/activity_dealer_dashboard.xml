@@ -29,24 +29,9 @@
         android:layout_margin="10dp"
         />
 
-    <TextView
-        android:id="@+id/view_customers_button"
-        android:layout_width="200dp"
-        android:layout_height="25dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/roundcorners"
-        android:clickable="true"
-        android:focusable="true"
-        android:gravity="center"
-        android:text="View Customers"
-        android:textSize="15dp"
-        android:textColor="@color/white"
-        android:drawableEnd="@drawable/ic_baseline_supervisor_account_24"
 
 
-        />
+    />
     <TextView
         android:id="@+id/view_reg_form_button"
         android:layout_width="200dp"
@@ -57,14 +42,13 @@
         android:clickable="true"
         android:focusable="true"
         android:gravity="center"
-        android:layout_below="@id/view_customers_button"
+
         android:text="View Test Drive Forms"
         android:textSize="15dp"
         android:textColor="@color/white"
         android:drawableEnd="@drawable/ic_baseline_insert_drive_file_24"
 
         />
-
     <TextView
         android:id="@+id/manage_bookings_button"
         android:layout_width="200dp"
@@ -82,5 +66,37 @@
         android:drawableEnd="@drawable/ic_baseline_bookmark_24"
 
         />
+
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundpic"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:elevation="10dp"
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_baseline_logout_24"
+        android:layout_alignBottom="@id/logout"
+        android:layout_alignTop="@id/logout"
+        android:layout_alignLeft="@id/logout"
+        android:layout_alignRight="@id/logout"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        />
+
 
 </RelativeLayout>

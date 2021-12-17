@@ -18,12 +18,11 @@
         >
 
 
-
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/post"
             android:padding="40dp"
+            android:src="@drawable/post"
 
             />
 
@@ -70,29 +69,54 @@
             android:padding="10dp"
             android:textSize="15dp" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_below="@id/feedback"
-            android:layout_alignRight="@+id/feedback"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/roundpic"
-            android:padding="10dp"
-            android:src="@drawable/plus" />
 
         <TextView
             android:id="@+id/submit"
-            android:layout_alignParentBottom="true"
-            android:textSize="25dp"
-            android:gravity="center"
             android:layout_width="200dp"
             android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/roundcorners"
-            android:layout_margin="20dp"
-            android:text="Submit"
             android:clickable="true"
             android:focusable="true"
+            android:gravity="center"
+            android:text="Submit"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/feedback"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundcorners"
+            android:backgroundTint="@color/white"
+
+            android:gravity="center|left"
+            android:hint="First Name"
+            android:paddingLeft="20dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:background="@drawable/roundcorners"
+            android:backgroundTint="@color/white"
+            android:gravity="center|left"
+            android:hint="Last Name"
+            android:textSize="15dp"
+            android:layout_below="@id/feedback"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp"
             />
     </RelativeLayout>
 

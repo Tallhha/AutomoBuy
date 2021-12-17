@@ -2,13 +2,16 @@ package com.smdproj.automobuy;
 
 import android.net.Uri;
 
-public class Vehicles {
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class Vehicles implements Serializable {
 
     String id, Name, Company, Type, Model, Color, Cost, Total;
     //Uri Img;
     String Img;
 
-    public Vehicles(String id, String name, String company, String type, String model, String color, String cost, String total, String img) {
+    public Vehicles(String id, String name, String company, String type, String model, String cost, String color, String total, String img) {
         Name = name;
         Company = company;
         Type = type;

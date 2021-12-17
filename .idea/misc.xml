@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.21574074074074073" />
+        <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/drawable/ic_baseline_directions_car_24.xml" value="0.18796296296296297" />
+        <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_dd_manage.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_dd_view_customers.xml" value="0.19114583333333332" />
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_dd_view_forms.xml" value="0.20520833333333333" />
@@ -12,12 +14,21 @@
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_home.xml" value="0.16018518518518518" />
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_login.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_manager_dashboard.xml" value="0.209375" />
+        <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_md_add_dealer.xml" value="0.209375" />
+        <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_md_add_vehicle.xml" value="0.209375" />
+        <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_md_view_feedback.xml" value="0.209375" />
+        <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_md_view_sales.xml" value="0.1953125" />
+        <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_purchase_car.xml" value="0.209375" />
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_search.xml" value="0.16018518518518518" />
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/activity_test_drive_registration.xml" value="0.16018518518518518" />
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/d_d_customer.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/d_d_manage.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/d_d_reg_form.xml" value="0.33" />
+        <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/m_d_feedback_item.xml" value="0.209375" />
+        <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/m_d_sale_item.xml" value="0.209375" />
         <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/temp_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Talha/Downloads/Deliverable1_i180573_i180417/AutomoBuy/app/src/main/res/layout/vehicle_item.xml" value="0.16296296296296298" />
       </map>
     </option>
   </component>

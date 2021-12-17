@@ -2,9 +2,11 @@ package com.smdproj.automobuy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +23,7 @@ public class TestDriveRegistration extends AppCompatActivity {
 
     EditText fname, lname, email, cnic, phone, date, outlet, time, cars;
     TextView submit;
+    ImageView search, home, menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,44 @@ public class TestDriveRegistration extends AppCompatActivity {
         time = findViewById(R.id.time);
         cars = findViewById(R.id.cars);
 
+        search = findViewById(R.id.search);
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TestDriveRegistration.this, Search.class);
+                startActivity(intent);
+            }
+        });
+
+        home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TestDriveRegistration.this, Home.class);
+                startActivity(intent);
+            }
+        });
+
+        menu = findViewById(R.id.menu);
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MyDBHelper db = new MyDBHelper(TestDriveRegistration.this);
+                String value = db.checkUser();
+                if (value.equals("mgr")) {
+                    Intent intent = new Intent(TestDriveRegistration.this, Manager_Dashboard.class);
+                    startActivity(intent);
+                } else if (value.equals("dlr")) {
+                    Intent intent = new Intent(TestDriveRegistration.this, Dealer_Dashboard.class);
+                    startActivity(intent);
+                } else {
+                    Intent intent = new Intent(TestDriveRegistration.this, Login.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
+
         submit = findViewById(R.id.submit);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,8 +90,9 @@ public class TestDriveRegistration extends AppCompatActivity {
 
     public void postData(TestDriveForm form) {
 
-        String urll = "http://192.168.56.1/automobuy/insert_testdrive.php";
-        StringRequest request = new StringRequest(Request.Method.POST, urll, new Response.Listener<String>() {
+        IP ip = new IP();
+        String INSERT_FORM = ip.getDB_IP() + "insert_testdrive.php";
+        StringRequest request = new StringRequest(Request.Method.POST, INSERT_FORM, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(TestDriveRegistration.this, "DONE", Toast.LENGTH_SHORT).show();

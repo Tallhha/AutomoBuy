@@ -55,17 +55,32 @@
 
         <EditText
             android:id="@+id/search_text"
+            android:layout_width="360dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/search_button"
+            android:background="@drawable/roundcorners"
+            android:gravity="center|left"
             android:hint="Search Automobiles"
             android:paddingLeft="40dp"
-            android:textSize="15dp"
-            android:gravity="center|left"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/search_button"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_alignTop="@id/search_text"
+            android:layout_alignBottom="@id/search_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
             android:background="@drawable/roundcorners"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="20dp"
-            />
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Search" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/search_recycle"

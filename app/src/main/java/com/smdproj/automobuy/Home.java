@@ -41,7 +41,7 @@ public class Home extends AppCompatActivity {
                 MyDBHelper db = new MyDBHelper(Home.this);
                 String value = db.checkUser();
                 if(value.equals("mgr")) {
-                    Intent intent = new Intent(Home.this, Dealer_Dashboard.class);
+                    Intent intent = new Intent(Home.this, Manager_Dashboard.class);
                     startActivity(intent);
                 }
                 else if(value.equals("dlr")){

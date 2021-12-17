@@ -80,11 +80,12 @@
             android:textSize="15dp"
             android:layout_alignParentRight="true"
             />
+
         <EditText
             android:id="@+id/email"
-            android:layout_below="@id/fname"
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:layout_below="@id/fname"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
@@ -96,6 +97,7 @@
 
         <EditText
             android:id="@+id/cnic"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_below="@+id/email"
@@ -110,18 +112,18 @@
 
         <EditText
             android:id="@+id/phone"
-            android:layout_below="@+id/cnic"
-            android:hint="Phone No."
-            android:paddingLeft="10dp"
-            android:textSize="15dp"
-            android:gravity="center|left"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:background="@drawable/roundcorners"
+            android:layout_below="@+id/cnic"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
-            />
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundcorners"
+            android:gravity="center|left"
+            android:hint="Phone No."
+            android:paddingLeft="10dp"
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/submit"
@@ -155,6 +157,7 @@
             android:hint="Date (yyyy/mm/dd)"
             android:paddingLeft="10dp"
             android:textSize="15dp" />
+
         <EditText
             android:id="@+id/outlet"
             android:layout_below="@id/phone"
@@ -171,8 +174,6 @@
             android:layout_alignParentRight="true"
             />
 
-
-
         <EditText
             android:id="@+id/time"
             android:layout_below="@id/date"
@@ -187,6 +188,7 @@
             android:paddingLeft="10dp"
             android:textSize="15dp"
             />
+
         <EditText
             android:id="@+id/cars"
             android:layout_below="@id/date"

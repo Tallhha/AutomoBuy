@@ -14,13 +14,15 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Customers"
-        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:text="View Employees"
         android:textColor="@color/white"
         android:textSize="35dp"
-        android:layout_margin="10dp"
-
-        />
+        android:textStyle="bold" />
 
     <View
         android:id="@+id/view_section"
@@ -31,14 +33,56 @@
         android:layout_margin="10dp"
         />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/customer_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <EditText
+        android:id="@+id/id_to_delete"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
         android:layout_alignLeft="@id/view_section"
         android:layout_alignTop="@id/view_section"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundcorners"
+        android:backgroundTint="@color/white"
+        android:gravity="center|left"
+        android:hint="Enter Form ID"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/approve_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@id/view_section"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/id_to_delete"
+        android:background="@drawable/roundcorners"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Approve"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#4EFF0D"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/employee_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_to_delete"
+        android:layout_alignLeft="@id/view_section"
         android:layout_alignRight="@id/view_section"
         android:layout_alignBottom="@id/view_section"
+        android:layout_margin="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
