@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manager_Dashboard"
+    android:background="#f8b451"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manager's Dashboard"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_margin="10dp"
+
+        />
+
+    <View
+        android:id="@+id/view_section"
+        android:background="#f57542"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/view_employees_button"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundcorners"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_baseline_supervisor_account_24"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="View Employees"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/add_dealer_button"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/view_employees_button"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:background="@drawable/roundcorners"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_baseline_person_add_24"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Add Dealer"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/add_vehicle_button"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/add_dealer_button"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundcorners"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_baseline_directions_car_24"
+
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Add Vehicle"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/view_sales_button"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/add_vehicle_button"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundcorners"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_baseline_dollar"
+
+        android:focusable="true"
+        android:gravity="center"
+        android:text="View Sales"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/view_feedback_button"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/view_sales_button"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundcorners"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_baseline_feedback_24"
+
+        android:focusable="true"
+        android:gravity="center"
+        android:text="View Feedback"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundpic"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:elevation="10dp"
+        />
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_baseline_logout_24"
+        android:layout_alignBottom="@id/logout"
+        android:layout_alignTop="@id/logout"
+        android:layout_alignLeft="@id/logout"
+        android:layout_alignRight="@id/logout"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        />
+
+</RelativeLayout>
