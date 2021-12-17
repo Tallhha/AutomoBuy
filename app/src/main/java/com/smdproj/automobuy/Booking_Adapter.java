@@ -34,14 +34,14 @@ public class Booking_Adapter extends RecyclerView.Adapter<Booking_Adapter.ImageV
         holder.fname.setText(mUploads.get(position).getFirstName());
         holder.lname.setText(mUploads.get(position).getLastName());
         holder.email.setText(mUploads.get(position).getEmail());
-        holder.phone_no.setText(mUploads.get(position).getPhoneNo());
-        holder.id.setText(mUploads.get(position).getId());
+        holder.phone_no.setText("PHONE: " + mUploads.get(position).getPhoneNo());
+        holder.id.setText("ID: " + mUploads.get(position).getId());
 
         holder.car_name.setText(mUploads.get(position).getVehicle());
         holder.car_cost.setText(mUploads.get(position).getCost());
         holder.car_color.setText(mUploads.get(position).getColor());
         holder.car_type.setText(mUploads.get(position).getType());
-        holder.car_model.setText(mUploads.get(position).getModel());
+        holder.car_model.setText("MODEL" + mUploads.get(position).getModel());
         holder.buying_option.setText(mUploads.get(position).getBuyingOption());
 
     }

@@ -70,7 +70,7 @@ public class D_D_View_Customers extends AppCompatActivity {
 
                                 //converting the string to json array object
                                 JSONArray array = object.getJSONArray("employee");
-
+                                MyDBHelper db = new MyDBHelper(D_D_View_Customers.this);
                                 //traversing through all the object
                                 for (int i = 0; i < array.length(); i++) {
 
@@ -90,6 +90,9 @@ public class D_D_View_Customers extends AppCompatActivity {
                                             employee.getString("salary"),
                                             employee.getString("total_sales")
                                     ));
+
+                                    db.insertEmp(employee.getString("email"), employee.getString("cnic"),"0",employee.getString("fname"),employee.getString("lname"),employee.getString("phone_no"),employee.getString("address"), employee.getString("salary"),employee.getString("type"),employee.getString("total_sales"));
+
                                 }
 
                                 //creating adapter object and setting it to recyclerview

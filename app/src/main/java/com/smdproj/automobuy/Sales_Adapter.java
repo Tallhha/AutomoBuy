@@ -33,7 +33,7 @@ public class Sales_Adapter extends RecyclerView.Adapter<Sales_Adapter.ImageViewH
         holder.custemail.setText(mUploads.get(position).getCust_email());
         holder.dlrname.setText(mUploads.get(position).getDlr_name());
         holder.dlremail.setText(mUploads.get(position).getDlr_email());
-        holder.id.setText(mUploads.get(position).getId());
+        holder.id.setText("ID: " + mUploads.get(position).getId());
 
         holder.car_name.setText(mUploads.get(position).getVehicle());
         holder.car_cost.setText(mUploads.get(position).getCost());

@@ -67,10 +67,10 @@
         android:clickable="true"
         android:focusable="true"
         android:gravity="center"
-        android:text="Approve"
+        android:text="Remove"
         android:textSize="15dp"
         android:textColor="@color/white"
-        android:backgroundTint="#4EFF0D"
+        android:backgroundTint="#FF0D31"
         />
 
 

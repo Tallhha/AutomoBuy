@@ -14,6 +14,23 @@ public class MyUsers {
         public static String _IS_DLR = "is_dlr";
     }
 
+    public static class Employee implements BaseColumns{
+        public static String TABLENAME="emp";
+        public static String _EMAIL="email";
+        public static String _CNIC="cnic";
+        public static String _FNAME="fname";
+        public static String _LNAME="lname";
+        public static String _PHONENO="phoneno";
+        public static String _ADDRESS="address";
+        public static String _TYPE="type";
+        public static String _SALARY="salary";
+        public static String _SALES="sales";
+        public static String _ISMGR="ismgr";
+
+    }
+
+
+
 
 
 

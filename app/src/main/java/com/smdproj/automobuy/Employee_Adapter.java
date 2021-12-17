@@ -35,11 +35,11 @@ public class Employee_Adapter extends RecyclerView.Adapter<Employee_Adapter.Imag
         holder.fname.setText(mUploads.get(position).getFirstName());
         holder.lname.setText(mUploads.get(position).getLastName());
         holder.email.setText(mUploads.get(position).getEmail());
-        holder.phone_no.setText(mUploads.get(position).getPhoneNo());
-        holder.id.setText(mUploads.get(position).getId());
+        holder.phone_no.setText("PHONE: " + mUploads.get(position).getPhoneNo());
+        holder.id.setText("ID: " + mUploads.get(position).getId());
         holder.type.setText((mUploads.get(position).getType()));
-        holder.sales.setText((mUploads.get(position).getSales()));
-        holder.salary.setText((mUploads.get(position).getSalary()));
+        holder.sales.setText(("SALES: " + mUploads.get(position).getSales()));
+        holder.salary.setText(("SALARY: " +mUploads.get(position).getSalary()));
     }
 
     @Override

@@ -34,11 +34,11 @@ public class TestDrive_Adapter extends RecyclerView.Adapter<TestDrive_Adapter.Im
         holder.fname.setText(mUploads.get(position).getFirstName());
         holder.lname.setText(mUploads.get(position).getLastName());
         holder.email.setText(mUploads.get(position).getEmail());
-        holder.phone_no.setText(mUploads.get(position).getPhoneNo());
-        holder.cnic.setText(mUploads.get(position).getCnic());
+        holder.phone_no.setText("PHONE: " + mUploads.get(position).getPhoneNo());
+        holder.cnic.setText("CNIC: " + mUploads.get(position).getCnic());
         holder.date.setText(mUploads.get(position).getDate());
-        holder.id.setText(mUploads.get(position).getId());
-        holder.vehicle.setText(mUploads.get(position).getVehicle());
+        holder.id.setText("ID: " +mUploads.get(position).getId());
+        holder.vehicle.setText("VEHICLE: " + mUploads.get(position).getVehicle());
         holder.outlet.setText(mUploads.get(position).getOutlet());
 
     }

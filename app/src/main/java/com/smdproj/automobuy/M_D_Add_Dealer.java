@@ -63,7 +63,7 @@ public class M_D_Add_Dealer extends AppCompatActivity {
         StringRequest request = new StringRequest(Request.Method.POST, INSERT_FORM, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(M_D_Add_Dealer.this, "DONE", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(M_D_Add_Dealer.this, "DONE", Toast.LENGTH_SHORT).show();
                 postData2(new LogInfo(password.getText().toString(),email.getText().toString(),0,1));
                 //Toast.makeText(M_D_Add_Dealer.this, "DONE", Toast.LENGTH_SHORT).show();
             }

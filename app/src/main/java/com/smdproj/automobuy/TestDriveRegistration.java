@@ -95,7 +95,7 @@ public class TestDriveRegistration extends AppCompatActivity {
         StringRequest request = new StringRequest(Request.Method.POST, INSERT_FORM, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(TestDriveRegistration.this, "DONE", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(TestDriveRegistration.this, "DONE", Toast.LENGTH_SHORT).show();
                 finish();
             }
         },
